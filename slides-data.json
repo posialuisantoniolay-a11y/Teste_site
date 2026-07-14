@@ -1,0 +1,3108 @@
+[
+  {
+    "id": 1,
+    "bg": null,
+    "audio": [
+      "assets/media1.mp3",
+      "assets/media1.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 32.295,
+          "top": 43.333,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Começar",
+        "pos": {
+          "left": 34.795,
+          "top": 47.798,
+          "width": 30.489,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Imagem 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.019,
+          "width": 100.0,
+          "height": 99.981
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image1.png",
+        "kind": "picture"
+      },
+      {
+        "name": "abertura desconjuração",
+        "text": "",
+        "pos": {
+          "left": 47.335,
+          "top": -6.311,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "bg": null,
+    "audio": [
+      "assets/media2.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image5.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 78.281,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Entrar pela Porta Principal",
+        "pos": {
+          "left": 2.5,
+          "top": 82.746,
+          "width": 30.489,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 3
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 65.456,
+          "top": 78.281,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 6",
+        "text": "Entrar pela uma janela",
+        "pos": {
+          "left": 69.282,
+          "top": 83.127,
+          "width": 29.051,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 5
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": -20.669,
+          "top": -10.559,
+          "width": 47.754,
+          "height": 21.118
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": -14.272,
+          "top": -10.559,
+          "width": 47.754,
+          "height": 21.118
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": -6.172,
+          "top": -10.559,
+          "width": 47.754,
+          "height": 21.118
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 2.063,
+          "top": -9.98,
+          "width": 47.754,
+          "height": 21.118
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": -17.398,
+          "top": 25.526,
+          "width": 47.754,
+          "height": 21.118
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 12",
+        "text": "Vocês chegam ao Sanatório Alvorada. O ar é pesado e um cheiro metálico vira o estômago. A porta principal está encostada, também há uma janela no térreo que parece levar ao escritório.",
+        "pos": {
+          "left": 0.734,
+          "top": 1.69,
+          "width": 29.622,
+          "height": 38.099
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Amarantos",
+        "text": "",
+        "pos": {
+          "left": 25.939,
+          "top": 27.778,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "bg": null,
+    "audio": [
+      "assets/media3.mp3",
+      "assets/media3.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image6.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 40.008,
+          "top": 48.013,
+          "width": 16.695,
+          "height": 53.117
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image7.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.263,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 65.456,
+          "top": 77.263,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 6",
+        "text": "11 ou mais",
+        "pos": {
+          "left": 12.191,
+          "top": 82.108,
+          "width": 11.029,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 7
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 7",
+        "text": "menor que 11",
+        "pos": {
+          "left": 75.989,
+          "top": 82.108,
+          "width": 16.306,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 8
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 13",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 14",
+        "text": "Uma criatura grotesca está no seu caminho! É hora de lutar.Role um D20 e clique na opção que respresenta seu valor.",
+        "pos": {
+          "left": 0.0,
+          "top": 3.258,
+          "width": 29.622,
+          "height": 32.636
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "sangue",
+        "text": "",
+        "pos": {
+          "left": 50.608,
+          "top": -7.008,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "bg": null,
+    "audio": [],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image6.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 79.948,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 65.456,
+          "top": 79.948,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Entrar na porta à direita.",
+        "pos": {
+          "left": 1.667,
+          "top": 84.793,
+          "width": 28.246,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 5
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 6",
+        "text": "Subir a escada",
+        "pos": {
+          "left": 75.989,
+          "top": 84.793,
+          "width": 16.306,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 7
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 13",
+        "text": "Em um golpe rápido a criatura não tem nem tempo de entender, mas vocês a destruiram com um só golpe silencioso. O que vocês fazem?",
+        "pos": {
+          "left": 0.0,
+          "top": 5.863,
+          "width": 29.622,
+          "height": 32.636
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "bg": null,
+    "audio": [],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image8.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": -19.45,
+          "top": 82.551,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 82.295,
+          "top": 82.551,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 5",
+        "text": "12 ou mais",
+        "pos": {
+          "left": 2.291,
+          "top": 87.396,
+          "width": 11.029,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 9
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 6",
+        "text": "menor que 12",
+        "pos": {
+          "left": 83.734,
+          "top": 87.396,
+          "width": 14.344,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 6
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": -4.275,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 4.087,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 14.676,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 25.441,
+          "top": 42.444,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 88.86,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 13",
+        "text": "O lugar parece calmo, mas o silêncio é perturbador. Vocês precisam encontrar pistas sobre o que o ocultista está planejando.Role um D20 para procurar por pistas.",
+        "pos": {
+          "left": 0.0,
+          "top": 4.236,
+          "width": 29.622,
+          "height": 38.099
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "bg": null,
+    "audio": [],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image8.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 31.134,
+          "top": 75.689,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "sair pela porta",
+        "pos": {
+          "left": 39.583,
+          "top": 80.534,
+          "width": 16.507,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 8
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": -4.275,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": 4.087,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": 14.676,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 25.441,
+          "top": 42.444,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 88.86,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 11",
+        "text": "Vocês não encontra nada, mas ao vasculhar uma estante um de vocês derruba um livro. Você não sabe se alguém ouviu!",
+        "pos": {
+          "left": 0.0,
+          "top": 4.236,
+          "width": 29.622,
+          "height": 27.173
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "bg": null,
+    "audio": [],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image9.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Ir para a porta",
+        "pos": {
+          "left": 6.667,
+          "top": 81.928,
+          "width": 18.148,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 10
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 55.776,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": 79.632,
+          "top": 76.702,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 7",
+        "text": "Provocar um curto circuito no candelabro",
+        "pos": {
+          "left": 57.035,
+          "top": 81.928,
+          "width": 42.965,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 15
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 13",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 14",
+        "text": "Essa foi por pouco!Vocês ouve cânticos vindo do final do corredor. O ritual está prestes a começar. Vocês decidem ir direto para a fonte ou tentar sabotar a fiação elétrica para apagar as luzes?",
+        "pos": {
+          "left": 0.0,
+          "top": 3.258,
+          "width": 29.622,
+          "height": 44.878
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "bg": null,
+    "audio": [
+      "assets/media3.mp3",
+      "assets/media3.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image6.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.058,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 65.456,
+          "top": 77.058,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 54.456,
+          "top": 39.155,
+          "width": 16.324,
+          "height": 43.396
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image10.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": 37.579,
+          "top": 43.798,
+          "width": 14.62,
+          "height": 46.516
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image7.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": 31.158,
+          "top": 38.297,
+          "width": 16.978,
+          "height": 45.112
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image11.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 8",
+        "text": "15 ou mais",
+        "pos": {
+          "left": 12.191,
+          "top": 81.903,
+          "width": 11.029,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 7
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 9",
+        "text": "menor que 15",
+        "pos": {
+          "left": 75.989,
+          "top": 81.903,
+          "width": 14.344,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 12
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 13",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 14",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 15",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 16",
+        "text": "Os ocultistas ouviram!Vocês foram cercados! O medo gela seu sangue.Role um D20 e veja se conseguem escapar!",
+        "pos": {
+          "left": 0.0,
+          "top": 5.863,
+          "width": 29.622,
+          "height": 27.173
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "sangue",
+        "text": "",
+        "pos": {
+          "left": 50.608,
+          "top": -7.008,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "bg": null,
+    "audio": [],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image12.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": -17.66,
+          "top": 57.235,
+          "width": 43.905,
+          "height": 19.416
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 72.84,
+          "top": 77.17,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Usar passagem secretaBônus de furtividade: +1",
+        "pos": {
+          "left": -4.325,
+          "top": 61.227,
+          "width": 35.411,
+          "height": 11.22
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 10
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 6",
+        "text": "Sair pela porta",
+        "pos": {
+          "left": 75.777,
+          "top": 82.015,
+          "width": 25.056,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 8
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": -4.275,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 4.087,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 14.676,
+          "top": 41.687,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 25.441,
+          "top": 42.444,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 88.86,
+          "width": 62.427,
+          "height": 27.607
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 13",
+        "text": "Vocês encontram um mapa que revela uma passagem secreta para o porão sob o tapete.",
+        "pos": {
+          "left": 0.0,
+          "top": 4.236,
+          "width": 29.622,
+          "height": 21.71
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "bg": null,
+    "audio": [
+      "assets/media3.mp3",
+      "assets/media3.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image13.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 53.828,
+          "top": 40.563,
+          "width": 11.628,
+          "height": 30.911
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image10.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 37.057,
+          "top": 41.125,
+          "width": 11.23,
+          "height": 29.84
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image11.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 36.786,
+          "top": 51.839,
+          "width": 9.671,
+          "height": 30.769
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image7.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": -5.409,
+          "top": -14.292,
+          "width": 113.501,
+          "height": 113.501
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image13.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.541,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 8",
+        "text": "Ir para o confronto",
+        "pos": {
+          "left": 4.426,
+          "top": 82.386,
+          "width": 22.736,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 11
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 13",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 14",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 15",
+        "text": "Vocês econtraram uma passagem com escadas de pedra que levaram a esse ritual. Os ocultistam estão entrando e sendo desintegrados por ele!",
+        "pos": {
+          "left": 0.0,
+          "top": 5.863,
+          "width": 29.622,
+          "height": 32.636
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 16",
+        "text": "",
+        "pos": {
+          "left": 65.456,
+          "top": 77.541,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 17",
+        "text": "Fugir",
+        "pos": {
+          "left": 80.56,
+          "top": 82.386,
+          "width": 9.44,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 14
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "sangue",
+        "text": "",
+        "pos": {
+          "left": 24.684,
+          "top": 28.519,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "bg": null,
+    "audio": [
+      "assets/media3.mp3",
+      "assets/media3.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image13.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 53.828,
+          "top": 40.563,
+          "width": 11.628,
+          "height": 30.911
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image10.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 37.057,
+          "top": 41.125,
+          "width": 11.23,
+          "height": 29.84
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image11.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 36.786,
+          "top": 51.839,
+          "width": 9.671,
+          "height": 30.769
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image7.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": -5.409,
+          "top": -14.292,
+          "width": 113.501,
+          "height": 113.501
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image13.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": -12.233,
+          "top": 77.448,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": 77.689,
+          "top": 77.448,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 9",
+        "text": "18 ou mais",
+        "pos": {
+          "left": 3.824,
+          "top": 82.293,
+          "width": 11.029,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 10",
+        "text": "menos que 10",
+        "pos": {
+          "left": 82.657,
+          "top": 82.293,
+          "width": 14.531,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 12
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 13",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 14",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 15",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 16",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 17",
+        "text": "\"Vocês chegaram tarde demais!\", grita o Ocultista. A Membrana está se rompendo.Role um D20.",
+        "pos": {
+          "left": 0.0,
+          "top": 4.468,
+          "width": 29.622,
+          "height": 27.173
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 18",
+        "text": "",
+        "pos": {
+          "left": 33.637,
+          "top": 77.448,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 19",
+        "text": "10 a 17",
+        "pos": {
+          "left": 47.615,
+          "top": 82.293,
+          "width": 7.453,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 14
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "sangue",
+        "text": "",
+        "pos": {
+          "left": 48.481,
+          "top": -7.037,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "bg": null,
+    "audio": [
+      "assets/media4.mp3",
+      "assets/media4.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image13.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 11",
+        "text": "Suas forças se esgotam e a realidade se apaga. O Sanatório Alvorada agora é o seu túmulo eterno. A Ordo Realitas perdeu seus agentes e o mal continuará a crescer nas sombras. FIM DE JOGO.",
+        "pos": {
+          "left": 0.0,
+          "top": 7.491,
+          "width": 29.622,
+          "height": 38.099
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Voltar ao início",
+        "pos": {
+          "left": 7.5,
+          "top": 81.928,
+          "width": 17.377,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "o amanhecer sempre chega",
+        "text": "",
+        "pos": {
+          "left": 49.713,
+          "top": -5.556,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "bg": null,
+    "audio": [
+      "assets/media4.mp3",
+      "assets/media4.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image14.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 57.172,
+          "top": 55.632,
+          "width": 15.172,
+          "height": 15.172
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image15.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 4",
+        "text": "",
+        "pos": {
+          "left": 24.172,
+          "top": 55.32,
+          "width": 15.172,
+          "height": 15.172
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image15.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 16.606,
+          "top": 59.07,
+          "width": 13.579,
+          "height": 14.243
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image16.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": 83.105,
+          "top": 75.582,
+          "width": 15.052,
+          "height": 16.256
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image17.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": 74.633,
+          "top": 62.906,
+          "width": 15.172,
+          "height": 15.172
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image15.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": 81.759,
+          "top": 60.466,
+          "width": 23.604,
+          "height": 19.793
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image18.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 69.194,
+          "top": 59.07,
+          "width": 8.521,
+          "height": 9.619
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image19.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 44.02,
+          "top": 50.0,
+          "width": 16.212,
+          "height": 12.261
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image20.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 31.917,
+          "top": 50.338,
+          "width": 14.58,
+          "height": 11.923
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image21.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 5.625,
+          "top": 65.727,
+          "width": 15.172,
+          "height": 15.172
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image15.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 13",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image14.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 17",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 18",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 19",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 20",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 21",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 22",
+        "text": "Com um golpe decisivo, vocês interrompem o ritual. A energia paranormal se dissipa o teto do sanatório cai revelando o nascer do sol. Vocês recuperam o livro de rituais e garantem a segurança do mundo... por enquanto. A Ordem agradece!",
+        "pos": {
+          "left": 0.0,
+          "top": 0.98,
+          "width": 29.622,
+          "height": 54.488
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Voltar ao início",
+        "pos": {
+          "left": 7.5,
+          "top": 81.928,
+          "width": 17.377,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "o amanhecer sempre chega",
+        "text": "",
+        "pos": {
+          "left": 48.733,
+          "top": -5.804,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "bg": null,
+    "audio": [
+      "assets/media4.mp3",
+      "assets/media4.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": -0.023,
+          "top": 0.0,
+          "width": 100.023,
+          "height": 100.001
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image22.jpeg",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 10",
+        "text": "Vocês falharam em impedir o ritual. A Membrana se rompeu e o Outro Lado começou a invadir nossa realidade. Vocês conseguem escapar com vida, mas o mundo nunca mais será o mesmo. A missão foi um fracasso. Mas você vive para lutar outro dia!",
+        "pos": {
+          "left": -0.023,
+          "top": 0.976,
+          "width": 29.622,
+          "height": 54.488
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Voltar ao início",
+        "pos": {
+          "left": 7.5,
+          "top": 81.928,
+          "width": 17.377,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "o amanhecer sempre chega",
+        "text": "",
+        "pos": {
+          "left": 48.733,
+          "top": -5.804,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "bg": null,
+    "audio": [
+      "assets/media2.mp3",
+      "assets/media2.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image9.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "menor que 15",
+        "pos": {
+          "left": 10.533,
+          "top": 81.928,
+          "width": 14.344,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 12
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 5",
+        "text": "",
+        "pos": {
+          "left": 55.776,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": 79.632,
+          "top": 76.702,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 7",
+        "text": "15 ou mais",
+        "pos": {
+          "left": 57.035,
+          "top": 81.928,
+          "width": 42.965,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 13
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 11",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 12",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 13",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 14",
+        "text": "Vocês tentam sabotar as luzes, isso parece mais difícil que o normal, isso exige conheciemento técnico e de ocultismo que nenhum de vocês tem. Penalidade de -1 no teste.Role um D20 para sabotar.",
+        "pos": {
+          "left": 0.0,
+          "top": 3.258,
+          "width": 29.622,
+          "height": 43.562
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Amarantos",
+        "text": "",
+        "pos": {
+          "left": 51.667,
+          "top": -7.037,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "bg": null,
+    "audio": [
+      "assets/media3.mp3",
+      "assets/media3.mp3"
+    ],
+    "elements": [
+      {
+        "name": "Freeform 2",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image13.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 6",
+        "text": "",
+        "pos": {
+          "left": -4.161,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 7",
+        "text": "",
+        "pos": {
+          "left": 3.978,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 8",
+        "text": "",
+        "pos": {
+          "left": 14.283,
+          "top": 40.571,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 9",
+        "text": "",
+        "pos": {
+          "left": 24.759,
+          "top": 41.307,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 10",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 86.48,
+          "width": 60.755,
+          "height": 26.867
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 11",
+        "text": "Só resta um ocultista e o ritual está quase complete. Ele se prepara para entrar no círculo. O sanatório parece tremer, as madeiras e pedras começam a cair do teto. Um de você corre com toda a forma que ainda lhe resta…",
+        "pos": {
+          "left": 0.0,
+          "top": 7.491,
+          "width": 29.622,
+          "height": 44.878
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": null,
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "Freeform 3",
+        "text": "",
+        "pos": {
+          "left": 0.0,
+          "top": 77.083,
+          "width": 35.411,
+          "height": 15.659
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image3.png",
+        "kind": "shape"
+      },
+      {
+        "name": "TextBox 4",
+        "text": "continuar",
+        "pos": {
+          "left": 10.533,
+          "top": 81.928,
+          "width": 14.344,
+          "height": 5.61
+        },
+        "font": {
+          "size": 32.0,
+          "family": " Avenir Next Arabic",
+          "color": "#000000"
+        },
+        "link": {
+          "type": "slide",
+          "slide": 13
+        },
+        "image": null,
+        "kind": "shape"
+      },
+      {
+        "name": "sangue",
+        "text": "",
+        "pos": {
+          "left": 47.335,
+          "top": -5.556,
+          "width": 2.665,
+          "height": 4.738
+        },
+        "font": {},
+        "link": null,
+        "image": "assets/image2.png",
+        "kind": "picture"
+      }
+    ]
+  }
+]

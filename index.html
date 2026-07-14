@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ordem Paranormal — Livro Jogo v4</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+:root {
+  --slide-ratio: 16 / 9;
+  --btn-font: 'Source Sans 3', 'Segoe UI', sans-serif;
+  --title-font: 'Cinzel', Georgia, serif;
+  --text-shadow: 0 2px 8px rgba(0,0,0,.85);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a0a0a;
+  font-family: var(--btn-font);
+  color: #f2e8d8;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+#stage-wrap {
+  position: relative;
+  width: min(100vw - 24px, calc((100vh - 80px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  max-height: calc(100vh - 80px);
+}
+
+#stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 2px solid #3a2a1a;
+  box-shadow: 0 0 60px rgba(120, 20, 20, .35), inset 0 0 80px rgba(0,0,0,.4);
+  background: #111;
+  container-type: size;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .45s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide-overlay {
+  position: absolute;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.6));
+}
+
+.narrative {
+  position: absolute;
+  padding: 1.2% 1.4%;
+  max-width: 32%;
+  font-size: clamp(11px, 1.35vw, 22px);
+  line-height: 1.35;
+  color: #111;
+  font-weight: 600;
+  text-shadow: none;
+  background: url('assets/image3.png') center/100% 100% no-repeat;
+  z-index: 5;
+}
+
+.narrative::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(245, 235, 210, .78);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.action-btn {
+  position: relative;
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+  color: #14100a;
+  font-family: var(--btn-font);
+  font-weight: 700;
+  font-size: clamp(11px, 1.05cqw, 15px);
+  line-height: 1.25;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55em 1em;
+  min-height: 2.8em;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(232,220,198,.95) 100%) padding-box,
+    url('assets/image3.png') center/100% 100% no-repeat border-box;
+  border: 2px solid #0d0d0d;
+  box-shadow:
+    0 3px 0 #0d0d0d,
+    0 6px 16px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.65);
+  transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
+  text-shadow: 0 1px 0 rgba(255,255,255,.35);
+  letter-spacing: .02em;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.action-btn .btn-sub {
+  display: block;
+  font-size: .78em;
+  font-weight: 600;
+  margin-top: .15em;
+  opacity: .85;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow:
+    0 5px 0 #0d0d0d,
+    0 10px 22px rgba(0,0,0,.5),
+    inset 0 1px 0 rgba(255,255,255,.7);
+}
+
+.action-btn:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 1px 0 #0d0d0d,
+    0 3px 8px rgba(0,0,0,.4),
+    inset 0 1px 0 rgba(255,255,255,.5);
+}
+
+.actions-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: clamp(8px, 1.2cqw, 14px);
+  padding: clamp(10px, 1.8cqw, 18px) clamp(12px, 2cqw, 24px) clamp(12px, 2cqw, 20px);
+  background:
+    linear-gradient(to top, rgba(0,0,0,.88) 0%, rgba(0,0,0,.55) 55%, transparent 100%);
+  container-type: inline-size;
+}
+
+.actions-footer .action-btn {
+  flex: 1 1 calc(50% - 8px);
+  max-width: calc(50% - 4px);
+  min-width: min(42%, 160px);
+}
+
+.actions-footer.count-1 .action-btn {
+  flex: 0 1 min(52%, 320px);
+  max-width: min(52%, 320px);
+}
+
+.actions-footer.count-3 .action-btn {
+  flex: 1 1 calc(33.33% - 8px);
+  max-width: calc(33.33% - 4px);
+  min-width: min(30%, 120px);
+  font-size: clamp(10px, .95cqw, 13px);
+}
+
+.actions-center {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.actions-center .action-btn {
+  pointer-events: auto;
+  flex: 0 1 min(38%, 340px);
+  min-height: 3.4em;
+  font-size: clamp(14px, 1.5cqw, 22px);
+  padding: 0.7em 1.4em;
+}
+
+.actions-middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 clamp(8px, 1.5cqw, 20px);
+  container-type: inline-size;
+}
+
+.actions-middle .action-btn {
+  flex: 0 1 min(36%, 280px);
+  font-size: clamp(10px, 1cqw, 14px);
+}
+
+.d20-zone {
+  position: absolute;
+  top: clamp(8px, 2.5cqh, 24px);
+  right: clamp(8px, 2cqw, 20px);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  pointer-events: auto;
+}
+
+.d20-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  perspective: 500px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.d20-die {
+  position: relative;
+  width: clamp(52px, 7.5cqw, 80px);
+  height: clamp(52px, 7.5cqw, 80px);
+  color: #8f1d1d;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.65));
+  transition: transform .2s ease;
+}
+
+.d20-shape {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.d20-num {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: clamp(18px, 2.8cqw, 30px);
+  color: #f4e4bc;
+  text-shadow: 0 2px 4px rgba(0,0,0,.9), 0 0 12px rgba(180,40,40,.5);
+  letter-spacing: -.02em;
+}
+
+.d20-btn:hover .d20-die {
+  transform: scale(1.06);
+}
+
+.d20-btn:active .d20-die {
+  transform: scale(.96);
+}
+
+.d20-die.rolling {
+  animation: d20-tumble 0.85s cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes d20-tumble {
+  0%   { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); }
+  25%  { transform: rotateX(180deg) rotateY(90deg) rotateZ(45deg) scale(1.08); }
+  50%  { transform: rotateX(360deg) rotateY(270deg) rotateZ(90deg) scale(1.12); }
+  75%  { transform: rotateX(540deg) rotateY(450deg) rotateZ(135deg) scale(1.05); }
+  100% { transform: rotateX(720deg) rotateY(630deg) rotateZ(180deg) scale(1); }
+}
+
+.d20-tag {
+  font-family: var(--title-font);
+  font-size: clamp(9px, 1cqw, 12px);
+  letter-spacing: .2em;
+  color: #c9a86a;
+  text-shadow: 0 1px 6px rgba(0,0,0,.9);
+}
+
+.d20-result {
+  font-size: clamp(10px, 1.1cqw, 14px);
+  font-weight: 700;
+  color: #f0e0c0;
+  background: rgba(0,0,0,.72);
+  border: 1px solid #6b4a2a;
+  padding: 3px 8px;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity .3s ease, transform .3s ease;
+  white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(0,0,0,.8);
+}
+
+.d20-result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  background: linear-gradient(transparent, rgba(0,0,0,.92));
+  z-index: 100;
+}
+
+#controls button, #controls label {
+  background: rgba(40, 28, 18, .9);
+  border: 1px solid #6b4a2a;
+  color: #e8d5b5;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--btn-font);
+  font-size: 13px;
+}
+
+#controls button:hover { background: rgba(80, 50, 28, .95); }
+
+#start-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  text-align: center;
+  padding: 24px;
+}
+
+#start-overlay h1 {
+  font-family: var(--title-font);
+  font-size: clamp(1.4rem, 4vw, 2.6rem);
+  margin-bottom: 12px;
+  color: #c9a86a;
+  letter-spacing: .12em;
+}
+
+#start-overlay p {
+  max-width: 480px;
+  color: #b8a890;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+#start-overlay button {
+  font-family: var(--title-font);
+  font-size: 1.1rem;
+  padding: 14px 36px;
+  background: linear-gradient(180deg, #5c3d22, #2a1a0e);
+  border: 2px solid #8b6914;
+  color: #f0e0c0;
+  cursor: pointer;
+  letter-spacing: .15em;
+}
+
+#start-overlay button:hover {
+  filter: brightness(1.15);
+}
+
+@media (max-width: 640px) {
+  .narrative {
+    max-width: 42%;
+    font-size: clamp(9px, 2.8vw, 14px);
+  }
+  .actions-footer .action-btn {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: clamp(11px, 3.2vw, 14px);
+  }
+  .actions-footer.count-3 .action-btn {
+    flex: 1 1 calc(50% - 6px);
+    max-width: calc(50% - 3px);
+  }
+  .actions-footer.count-3 .action-btn:last-child {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .d20-zone {
+    top: 6px;
+    right: 6px;
+  }
+  .d20-die {
+    width: clamp(44px, 12vw, 64px);
+    height: clamp(44px, 12vw, 64px);
+  }
+}
+</style>
+</head>
+<body>
+  <div id="start-overlay">
+    <h1>ORDEM PARANORMAL</h1>
+    <p>Livro-jogo interativo — Sanatório Alvorada. Clique nas ações conforme suas rolagens de D20 e siga a história.</p>
+    <button type="button" id="btn-enter">Entrar na missão</button>
+  </div>
+
+  <div id="app">
+    <div id="stage-wrap">
+      <div id="stage">
+<section class="slide" id="slide-1" data-slide="1" data-audio="assets/media1.mp3">
+  <img class="slide-bg" src="assets/image1.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:47.335%;top:-6.311%;width:2.665%;height:4.738%">
+  <div class="actions-center count-1">
+    <button class="action-btn" type="button" data-goto="2" title="Começar">Começar</button>
+  </div>
+</section>
+<section class="slide" id="slide-2" data-slide="2" data-audio="assets/media2.mp3">
+  <img class="slide-bg" src="assets/image5.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:25.939%;top:27.778%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.734%;top:1.69%;width:29.622%;min-height:38.099%">Vocês chegam ao Sanatório Alvorada. O ar é pesado e um cheiro metálico vira o estômago. A porta principal está encostada, também há uma janela no térreo que parece levar ao escritório.</div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="3" title="Entrar pela Porta Principal">Entrar pela<br>Porta Principal</button>
+    <button class="action-btn" type="button" data-goto="5" title="Entrar pela uma janela">Entrar por<br>uma janela</button>
+  </div>
+</section>
+<section class="slide" id="slide-3" data-slide="3" data-audio="assets/media3.mp3">
+  <img class="slide-bg" src="assets/image6.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image7.png" alt="" draggable="false" style="left:40.008%;top:48.013%;width:16.695%;height:53.117%">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:50.608%;top:-7.008%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:3.258%;width:29.622%;min-height:32.636%">Uma criatura grotesca está no seu caminho! É hora de lutar.Role um D20 e clique na opção que respresenta seu valor.</div>
+  <div class="d20-zone" aria-live="polite">
+    <button type="button" class="d20-btn" aria-label="Rolar D20">
+      <div class="d20-die">
+        <svg class="d20-shape" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="50,4 93,27 93,73 50,96 7,73 7,27" fill="currentColor"/>
+          <polygon points="50,4 93,27 50,50 7,27" fill="rgba(0,0,0,.18)"/>
+          <polygon points="50,50 93,27 93,73 50,96" fill="rgba(255,255,255,.08)"/>
+        </svg>
+        <span class="d20-num">?</span>
+      </div>
+    </button>
+    <span class="d20-tag">D20</span>
+    <span class="d20-result"></span>
+  </div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="7" title="11 ou mais">11 ou mais</button>
+    <button class="action-btn" type="button" data-goto="8" title="menor que 11">Menor que 11</button>
+  </div>
+</section>
+<section class="slide" id="slide-4" data-slide="4" data-audio="">
+  <img class="slide-bg" src="assets/image6.png" alt="" draggable="false">
+  <div class="narrative" style="left:0.0%;top:5.863%;width:29.622%;min-height:32.636%">Em um golpe rápido a criatura não tem nem tempo de entender, mas vocês a destruiram com um só golpe silencioso. O que vocês fazem?</div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="5" title="Entrar na porta à direita.">Entrar na porta<br>à direita</button>
+    <button class="action-btn" type="button" data-goto="7" title="Subir a escada">Subir a escada</button>
+  </div>
+</section>
+<section class="slide" id="slide-5" data-slide="5" data-audio="">
+  <img class="slide-bg" src="assets/image8.png" alt="" draggable="false">
+  <div class="narrative" style="left:0.0%;top:4.236%;width:29.622%;min-height:38.099%">O lugar parece calmo, mas o silêncio é perturbador. Vocês precisam encontrar pistas sobre o que o ocultista está planejando.Role um D20 para procurar por pistas.</div>
+  <div class="d20-zone" aria-live="polite">
+    <button type="button" class="d20-btn" aria-label="Rolar D20">
+      <div class="d20-die">
+        <svg class="d20-shape" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="50,4 93,27 93,73 50,96 7,73 7,27" fill="currentColor"/>
+          <polygon points="50,4 93,27 50,50 7,27" fill="rgba(0,0,0,.18)"/>
+          <polygon points="50,50 93,27 93,73 50,96" fill="rgba(255,255,255,.08)"/>
+        </svg>
+        <span class="d20-num">?</span>
+      </div>
+    </button>
+    <span class="d20-tag">D20</span>
+    <span class="d20-result"></span>
+  </div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="6" title="menor que 12">Menor que 12</button>
+    <button class="action-btn" type="button" data-goto="9" title="12 ou mais">12 ou mais</button>
+  </div>
+</section>
+<section class="slide" id="slide-6" data-slide="6" data-audio="">
+  <img class="slide-bg" src="assets/image8.png" alt="" draggable="false">
+  <div class="narrative" style="left:0.0%;top:4.236%;width:29.622%;min-height:27.173%">Vocês não encontra nada, mas ao vasculhar uma estante um de vocês derruba um livro. Você não sabe se alguém ouviu!</div>
+  <div class="actions-footer count-1">
+    <button class="action-btn" type="button" data-goto="8" title="sair pela porta">sair pela porta</button>
+  </div>
+</section>
+<section class="slide" id="slide-7" data-slide="7" data-audio="">
+  <img class="slide-bg" src="assets/image9.png" alt="" draggable="false">
+  <div class="narrative" style="left:0.0%;top:3.258%;width:29.622%;min-height:44.878%">Essa foi por pouco!Vocês ouve cânticos vindo do final do corredor. O ritual está prestes a começar. Vocês decidem ir direto para a fonte ou tentar sabotar a fiação elétrica para apagar as luzes?</div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="10" title="Ir para a porta">Ir para a porta</button>
+    <button class="action-btn" type="button" data-goto="15" title="Provocar um curto circuito no candelabro">Provocar curto-circuito<span class='btn-sub'>no candelabro</span></button>
+  </div>
+</section>
+<section class="slide" id="slide-8" data-slide="8" data-audio="assets/media3.mp3">
+  <img class="slide-bg" src="assets/image6.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image10.png" alt="" draggable="false" style="left:54.456%;top:39.155%;width:16.324%;height:43.396%">
+  <img class="slide-overlay" src="assets/image7.png" alt="" draggable="false" style="left:37.579%;top:43.798%;width:14.62%;height:46.516%">
+  <img class="slide-overlay" src="assets/image11.png" alt="" draggable="false" style="left:31.158%;top:38.297%;width:16.978%;height:45.112%">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:50.608%;top:-7.008%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:5.863%;width:29.622%;min-height:27.173%">Os ocultistas ouviram!Vocês foram cercados! O medo gela seu sangue.Role um D20 e veja se conseguem escapar!</div>
+  <div class="d20-zone" aria-live="polite">
+    <button type="button" class="d20-btn" aria-label="Rolar D20">
+      <div class="d20-die">
+        <svg class="d20-shape" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="50,4 93,27 93,73 50,96 7,73 7,27" fill="currentColor"/>
+          <polygon points="50,4 93,27 50,50 7,27" fill="rgba(0,0,0,.18)"/>
+          <polygon points="50,50 93,27 93,73 50,96" fill="rgba(255,255,255,.08)"/>
+        </svg>
+        <span class="d20-num">?</span>
+      </div>
+    </button>
+    <span class="d20-tag">D20</span>
+    <span class="d20-result"></span>
+  </div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="7" title="15 ou mais">15 ou mais</button>
+    <button class="action-btn" type="button" data-goto="12" title="menor que 15">Menor que 15</button>
+  </div>
+</section>
+<section class="slide" id="slide-9" data-slide="9" data-audio="">
+  <img class="slide-bg" src="assets/image12.png" alt="" draggable="false">
+  <div class="narrative" style="left:0.0%;top:4.236%;width:29.622%;min-height:21.71%">Vocês encontram um mapa que revela uma passagem secreta para o porão sob o tapete.</div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="10" title="Usar passagem secretaBônus de furtividade: +1">Usar passagem secreta<span class='btn-sub'>Bônus de furtividade: +1</span></button>
+    <button class="action-btn" type="button" data-goto="8" title="Sair pela porta">Sair pela porta</button>
+  </div>
+</section>
+<section class="slide" id="slide-10" data-slide="10" data-audio="assets/media3.mp3">
+  <img class="slide-bg" src="assets/image13.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image10.png" alt="" draggable="false" style="left:53.828%;top:40.563%;width:11.628%;height:30.911%">
+  <img class="slide-overlay" src="assets/image11.png" alt="" draggable="false" style="left:37.057%;top:41.125%;width:11.23%;height:29.84%">
+  <img class="slide-overlay" src="assets/image7.png" alt="" draggable="false" style="left:36.786%;top:51.839%;width:9.671%;height:30.769%">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:24.684%;top:28.519%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:5.863%;width:29.622%;min-height:32.636%">Vocês econtraram uma passagem com escadas de pedra que levaram a esse ritual. Os ocultistam estão entrando e sendo desintegrados por ele!</div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="11" title="Ir para o confronto">Ir para o<br>confronto</button>
+    <button class="action-btn" type="button" data-goto="14" title="Fugir">Fugir</button>
+  </div>
+</section>
+<section class="slide" id="slide-11" data-slide="11" data-audio="assets/media3.mp3">
+  <img class="slide-bg" src="assets/image13.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image10.png" alt="" draggable="false" style="left:53.828%;top:40.563%;width:11.628%;height:30.911%">
+  <img class="slide-overlay" src="assets/image11.png" alt="" draggable="false" style="left:37.057%;top:41.125%;width:11.23%;height:29.84%">
+  <img class="slide-overlay" src="assets/image7.png" alt="" draggable="false" style="left:36.786%;top:51.839%;width:9.671%;height:30.769%">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:48.481%;top:-7.037%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:4.468%;width:29.622%;min-height:27.173%">"Vocês chegaram tarde demais!", grita o Ocultista. A Membrana está se rompendo.Role um D20.</div>
+  <div class="d20-zone" aria-live="polite">
+    <button type="button" class="d20-btn" aria-label="Rolar D20">
+      <div class="d20-die">
+        <svg class="d20-shape" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="50,4 93,27 93,73 50,96 7,73 7,27" fill="currentColor"/>
+          <polygon points="50,4 93,27 50,50 7,27" fill="rgba(0,0,0,.18)"/>
+          <polygon points="50,50 93,27 93,73 50,96" fill="rgba(255,255,255,.08)"/>
+        </svg>
+        <span class="d20-num">?</span>
+      </div>
+    </button>
+    <span class="d20-tag">D20</span>
+    <span class="d20-result"></span>
+  </div>
+  <div class="actions-footer count-3">
+    <button class="action-btn" type="button" data-goto="12" title="menos que 10">Menos que 10</button>
+    <button class="action-btn" type="button" data-goto="16" title="18 ou mais">18 ou mais</button>
+    <button class="action-btn" type="button" data-goto="14" title="10 a 17">10 a 17</button>
+  </div>
+</section>
+<section class="slide" id="slide-12" data-slide="12" data-audio="assets/media4.mp3">
+  <img class="slide-bg" src="assets/image13.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:49.713%;top:-5.556%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:7.491%;width:29.622%;min-height:38.099%">Suas forças se esgotam e a realidade se apaga. O Sanatório Alvorada agora é o seu túmulo eterno. A Ordo Realitas perdeu seus agentes e o mal continuará a crescer nas sombras. FIM DE JOGO.</div>
+  <div class="actions-footer count-1">
+    <button class="action-btn" type="button" data-goto="1" title="Voltar ao início">Voltar ao<br>início</button>
+  </div>
+</section>
+<section class="slide" id="slide-13" data-slide="13" data-audio="assets/media4.mp3">
+  <img class="slide-bg" src="assets/image14.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image15.png" alt="" draggable="false" style="left:57.172%;top:55.632%;width:15.172%;height:15.172%">
+  <img class="slide-overlay" src="assets/image15.png" alt="" draggable="false" style="left:24.172%;top:55.32%;width:15.172%;height:15.172%">
+  <img class="slide-overlay" src="assets/image16.png" alt="" draggable="false" style="left:16.606%;top:59.07%;width:13.579%;height:14.243%">
+  <img class="slide-overlay" src="assets/image17.png" alt="" draggable="false" style="left:83.105%;top:75.582%;width:15.052%;height:16.256%">
+  <img class="slide-overlay" src="assets/image15.png" alt="" draggable="false" style="left:74.633%;top:62.906%;width:15.172%;height:15.172%">
+  <img class="slide-overlay" src="assets/image18.png" alt="" draggable="false" style="left:81.759%;top:60.466%;width:23.604%;height:19.793%">
+  <img class="slide-overlay" src="assets/image19.png" alt="" draggable="false" style="left:69.194%;top:59.07%;width:8.521%;height:9.619%">
+  <img class="slide-overlay" src="assets/image20.png" alt="" draggable="false" style="left:44.02%;top:50.0%;width:16.212%;height:12.261%">
+  <img class="slide-overlay" src="assets/image21.png" alt="" draggable="false" style="left:31.917%;top:50.338%;width:14.58%;height:11.923%">
+  <img class="slide-overlay" src="assets/image15.png" alt="" draggable="false" style="left:5.625%;top:65.727%;width:15.172%;height:15.172%">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:48.733%;top:-5.804%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:0.98%;width:29.622%;min-height:54.488%">Com um golpe decisivo, vocês interrompem o ritual. A energia paranormal se dissipa o teto do sanatório cai revelando o nascer do sol. Vocês recuperam o livro de rituais e garantem a segurança do mundo... por enquanto. A Ordem agradece!</div>
+  <div class="actions-footer count-1">
+    <button class="action-btn" type="button" data-goto="1" title="Voltar ao início">Voltar ao<br>início</button>
+  </div>
+</section>
+<section class="slide" id="slide-14" data-slide="14" data-audio="assets/media4.mp3">
+  <img class="slide-bg" src="assets/image22.jpeg" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:48.733%;top:-5.804%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:-0.023%;top:0.976%;width:29.622%;min-height:54.488%">Vocês falharam em impedir o ritual. A Membrana se rompeu e o Outro Lado começou a invadir nossa realidade. Vocês conseguem escapar com vida, mas o mundo nunca mais será o mesmo. A missão foi um fracasso. Mas você vive para lutar outro dia!</div>
+  <div class="actions-footer count-1">
+    <button class="action-btn" type="button" data-goto="1" title="Voltar ao início">Voltar ao<br>início</button>
+  </div>
+</section>
+<section class="slide" id="slide-15" data-slide="15" data-audio="assets/media2.mp3">
+  <img class="slide-bg" src="assets/image9.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:51.667%;top:-7.037%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:3.258%;width:29.622%;min-height:43.562%">Vocês tentam sabotar as luzes, isso parece mais difícil que o normal, isso exige conheciemento técnico e de ocultismo que nenhum de vocês tem. Penalidade de -1 no teste.Role um D20 para sabotar.</div>
+  <div class="d20-zone" aria-live="polite">
+    <button type="button" class="d20-btn" aria-label="Rolar D20">
+      <div class="d20-die">
+        <svg class="d20-shape" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="50,4 93,27 93,73 50,96 7,73 7,27" fill="currentColor"/>
+          <polygon points="50,4 93,27 50,50 7,27" fill="rgba(0,0,0,.18)"/>
+          <polygon points="50,50 93,27 93,73 50,96" fill="rgba(255,255,255,.08)"/>
+        </svg>
+        <span class="d20-num">?</span>
+      </div>
+    </button>
+    <span class="d20-tag">D20</span>
+    <span class="d20-result"></span>
+  </div>
+  <div class="actions-footer count-2">
+    <button class="action-btn" type="button" data-goto="13" title="15 ou mais">15 ou mais</button>
+    <button class="action-btn" type="button" data-goto="12" title="menor que 15">Menor que 15</button>
+  </div>
+</section>
+<section class="slide" id="slide-16" data-slide="16" data-audio="assets/media3.mp3">
+  <img class="slide-bg" src="assets/image13.png" alt="" draggable="false">
+  <img class="slide-overlay" src="assets/image2.png" alt="" draggable="false" style="left:47.335%;top:-5.556%;width:2.665%;height:4.738%">
+  <div class="narrative" style="left:0.0%;top:7.491%;width:29.622%;min-height:44.878%">Só resta um ocultista e o ritual está quase complete. Ele se prepara para entrar no círculo. O sanatório parece tremer, as madeiras e pedras começam a cair do teto. Um de você corre com toda a forma que ainda lhe resta…</div>
+  <div class="actions-footer count-1">
+    <button class="action-btn" type="button" data-goto="13" title="continuar">continuar</button>
+  </div>
+</section>
+      </div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <button type="button" id="btn-mute" aria-pressed="false">🔊 Música</button>
+    <button type="button" id="btn-fullscreen">Tela cheia</button>
+  </div>
+
+  <audio id="bgm" loop preload="auto"></audio>
+
+  <script>
+    const SLIDES = [{"id": 1, "audio": "assets/media1.mp3"}, {"id": 2, "audio": "assets/media2.mp3"}, {"id": 3, "audio": "assets/media3.mp3"}, {"id": 4, "audio": null}, {"id": 5, "audio": null}, {"id": 6, "audio": null}, {"id": 7, "audio": null}, {"id": 8, "audio": "assets/media3.mp3"}, {"id": 9, "audio": null}, {"id": 10, "audio": "assets/media3.mp3"}, {"id": 11, "audio": "assets/media3.mp3"}, {"id": 12, "audio": "assets/media4.mp3"}, {"id": 13, "audio": "assets/media4.mp3"}, {"id": 14, "audio": "assets/media4.mp3"}, {"id": 15, "audio": "assets/media2.mp3"}, {"id": 16, "audio": "assets/media3.mp3"}];
+    let current = 1;
+    let started = false;
+    let muted = false;
+
+    const bgm = document.getElementById('bgm');
+
+    function showSlide(id) {
+      current = id;
+      document.querySelectorAll('.slide').forEach(el => {
+        el.classList.toggle('active', Number(el.dataset.slide) === id);
+      });
+
+      const slide = SLIDES.find(s => s.id === id);
+      if (slide && slide.audio && !muted) {
+        if (bgm.getAttribute('src') !== slide.audio) {
+          bgm.src = slide.audio;
+          bgm.currentTime = 0;
+        }
+        bgm.play().catch(() => {});
+      }
+
+      const diceZone = document.querySelector(`#slide-${id} .d20-zone`);
+      if (diceZone) {
+        const num = diceZone.querySelector('.d20-num');
+        const result = diceZone.querySelector('.d20-result');
+        const die = diceZone.querySelector('.d20-die');
+        if (num) num.textContent = '?';
+        if (result) {
+          result.textContent = '';
+          result.classList.remove('show');
+        }
+        if (die) die.classList.remove('rolling');
+      }
+    }
+
+    function rollD20(btn) {
+      if (btn.disabled) return;
+      const zone = btn.closest('.d20-zone');
+      const die = btn.querySelector('.d20-die');
+      const numEl = btn.querySelector('.d20-num');
+      const resultEl = zone.querySelector('.d20-result');
+      if (!die || !numEl) return;
+
+      btn.disabled = true;
+      die.classList.add('rolling');
+
+      let tick = 0;
+      const ticks = 20;
+      const tickMs = 45;
+
+      const interval = setInterval(() => {
+        numEl.textContent = String(Math.floor(Math.random() * 20) + 1);
+        tick += 1;
+        if (tick >= ticks) {
+          clearInterval(interval);
+          const final = Math.floor(Math.random() * 20) + 1;
+          numEl.textContent = String(final);
+          die.classList.remove('rolling');
+          resultEl.textContent = 'Rolou: ' + final;
+          resultEl.classList.add('show');
+          btn.disabled = false;
+        }
+      }, tickMs);
+    }
+
+    function goTo(id) {
+      if (id >= 1 && id <= 16) showSlide(id);
+    }
+
+    document.getElementById('stage').addEventListener('click', e => {
+      const d20 = e.target.closest('.d20-btn');
+      if (d20) {
+        e.preventDefault();
+        e.stopPropagation();
+        rollD20(d20);
+        return;
+      }
+      const btn = e.target.closest('[data-goto]');
+      if (btn) {
+        e.preventDefault();
+        goTo(Number(btn.dataset.goto));
+      }
+    });
+
+    document.getElementById('btn-enter').addEventListener('click', () => {
+      started = true;
+      document.getElementById('start-overlay').style.display = 'none';
+      showSlide(1);
+      if (!muted) bgm.play().catch(() => {});
+    });
+
+    document.getElementById('btn-mute').addEventListener('click', () => {
+      muted = !muted;
+      const b = document.getElementById('btn-mute');
+      b.textContent = muted ? '🔇 Música' : '🔊 Música';
+      b.setAttribute('aria-pressed', String(muted));
+      if (muted) bgm.pause();
+      else if (started) bgm.play().catch(() => {});
+    });
+
+    document.getElementById('btn-fullscreen').addEventListener('click', () => {
+      const el = document.documentElement;
+      if (!document.fullscreenElement) el.requestFullscreen?.();
+      else document.exitFullscreen?.();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'f' || e.key === 'F') document.getElementById('btn-fullscreen').click();
+    });
+  </script>
+</body>
+</html>
